@@ -1358,6 +1358,24 @@ section {
   box-shadow: none !important;
 }
 
-.swiper-wrapper {
-  padding-left: 50px;
+.carousel_handmade img {
+  width: 250px;
+  height: 250px;
+  box-shadow: none !important;
+}
+
+.carousel_handmade {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -1000px;
+  }
 }
