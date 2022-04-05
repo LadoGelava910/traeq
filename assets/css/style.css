@@ -1317,18 +1317,32 @@ section {
   overflow-y: auto;
 }
 
-.first_sentence {
-  opacity: 0;
-  transition: 1s all ease;
-}
+
 .service_box {
-  height: 420px;
+  height: 500px;
+  cursor: pointer;
 }
 
-.service_box:hover .first_sentence {
-  opacity: 1 !important;
-  transition: 1s all ease;
+#box1Hidden{
+  display: none;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  margin: auto;
+  height: auto !important;
+  background: rgba(0, 171, 190, 0.95);
+  color: white;
 }
+
+
+
+/* .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+  position: absolute;
+  width: 70vw !important;;
+  margin: auto;
+  z-index: 3;
+} */
 
 .service_more {
   padding: 5px 10px;
@@ -1348,7 +1362,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.service_box:hover:hover .service_more {
+.service_box:hover .service_more {
   opacity: 1 !important;
 }
 
