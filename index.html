@@ -40,7 +40,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body id="body">
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
@@ -222,123 +222,474 @@
               <p>ტრაექტორია სთავაზობს მის პარტნიორებს სრულ მეთოდოლოგიურ შესაძლებლობებს, როგორც თვისობრივი, ასევე რაოდენობრივი კვლევების მიმართულებით. </p>
             </div>
           </div> -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="450">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box1" id="box1" data-aos="fade-up" data-aos-delay="450">
+            
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">აღწერითი, სამომხმარებლო კვლევები (B2B და B2C სეგმენტში)</a></h4>
-              <p class="first_sentence"> აღწერითი ხასიათის კვლევები მნიშვნელოვანია როგორც მარკეტინგული, ასევე სოციალური თუ პოლიტიკური პროექტების ხელმძღვანელებისთვის.</p>
-              <button class="service_more">ვრცლად</button>
+              <h4>აღწერითი, სამომხმარებლო კვლევები (B2B და B2C სეგმენტში)</h4>
+              <p>აღწერითი ხასიათის კვლევები მნიშვნელოვანია როგორც მარკეტინგული, ასევე სოციალური თუ პოლიტიკური პროექტების ხელმძღვანელებისთვის.
+                ბრენდისა თუ პროდუქტის განვითარებისთვის მნიშვნელოვანია არსებული სამომხმარებლო ბაზრის შესწავლა და შეფასება სხვადასხვა კვლევითი ამოცანების შესრულებით, როგორებიცაა:</p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
 
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="600">
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box1Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close1">X</button>
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href=""> კმაყოფილებისა და ლოიალობის კვლევები</a></h4>
-              <p class="first_sentence"> კმაყოფილი და ლოიალური მომხმარებელი ბიზნესის ზრდისა და განვითარების ერთ-ერთი მთავარი განმაპირობებელი ძალაა.</p>
-              <button class="service_more">ვრცლად</button>
-          </div>
-            </div> 
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">საკომუნიკაციო მასალებისა და პროდუქტის ტესტირებები</a></h4>
-              <p class="first_sentence"> სხვადასხვა ტიპის ტესტირებები მნიშვნელოვანი საშუალებაა თქვენი პროდუქტის თუ კომუნიკაციის წარმატების წინასწარ შეფასებისთვის.</p>
-              <button class="service_more">ვრცლად</button>
-            </div>
-			  
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">შიდა ორგანიზაციული კვლევები</a></h4>
-              <p class="first_sentence"> კომპანიის წარმატებისა და განვითარებისთვის მნიშვნელოვანია როგორც მომხმარებელთა, ასევე თანამშრომელთა კმაყოფილებისა და მოტივაციის შეფასება. </p>
-              <button class="service_more">ვრცლად</button>
-            </div>
-			  
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">UX კვლევები</a></h4>
-              <p class="first_sentence">პროდუქტისა თუ მომსახურების შეძენამდე მყიდველი ყოველთვის გადის გარკვეულ გზას.</p>
-              <button class="service_more">ვრცლად</button>
-            </div>
-			  
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">მყიდველის ქცევის ანალიზი</a></h4>
-              <p class="first_sentence"> საზოგადოებრივი გამოკითხვებისთვის დამახასიათებელია განსხვავებული სპეციფიკა, როგორც შერჩევის, ასევე კვლევის ინსტრუმენტის შემუშავების თვალსაზრისით. 
-              </p>
-              <button class="service_more">ვრცლად</button>
-            </div>
-			  
-          </div>
-
-       
-
-
-
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">სოციალური და პოლიტიკური, საზოგადოებრივი აზრის გამოკითხვები (Public opinion poll)
-              </a></h4>
-              <p class="first_sentence"> აღწერითი ხასიათის კვლევები მნიშვნელოვანია როგორც მარკეტინგული, ასევე სოციალური თუ პოლიტიკური პროექტების ხელმძღვანელებისთვის</p>
-              <button class="service_more">ვრცლად</button>
-            </div>
-			  
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">ანალიზის მეთოდოლოგია
-
-              </a></h4>
-              <p class="">Conjoint Analysis, Price Elasticity Analysis, Brand Power Analysis, Brand Health Analysis, C-Sat NPS Brand Love Index Customer segmentation Univariate, bivariate and multivariate analysis, Factor analysis Cluster analysis Hypothesis testing, Predictive modeling
-              </p>
-              <button class="service_more">ვრცლად</button>
-
-            </div>
-			  
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">თვისებრივი კვლევები</a></h4>
-              <p>სტანდარტული და მინი ფოკუს ჯგუფები- (F2F/Online) /
-				  სტანდარტული და საექსპერტო ჩაღრმავებული ინტერვიუები (F2F / Online)
-/ თანმხლები მყიდველი
-/ ეთნოგრაფიული კვლევა
-/ კაბინეტური კვლევა  </p>
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>აღწერითი, სამომხმარებლო კვლევები (B2B და B2C სეგმენტში)</h4>
+              <p>აღწერითი ხასიათის კვლევები მნიშვნელოვანია როგორც მარკეტინგული, ასევე სოციალური თუ პოლიტიკური პროექტების ხელმძღვანელებისთვის.
+                ბრენდისა თუ პროდუქტის განვითარებისთვის მნიშვნელოვანია არსებული სამომხმარებლო ბაზრის შესწავლა და შეფასება სხვადასხვა კვლევითი ამოცანების შესრულებით, როგორებიცაა:</p>
+              <p>ბაზრის წილის განსაზღვრა <br/> <br/>
+                ბაზრის ძირითადი მოთამაშეების და მათი კონკურენტული უპირატესობების გამოკვეთა <br/> <br/>
+                ბრენდებისა თუ პროდუქტის ცნობადობისა და მოხმარების მაჩვენებლების განსაზღვრა და შედარება <br/> <br/>
+                ბრენდისა თუ პროდუქტის ძლიერი და სუსტი მხარეების გამოკვეთა <br/> <br/>
+                მომხმარებლების მიერ გადაწყვეტილების პროცესის აღწერა, ბრენდისა თუ პროდუქტის შერჩევაზე ზემოქმედი ფაქტორების შესწავლა <br/> <br/>
+                
+                მიღებული მონაცემები ეხმარება პროექტის მმართველ გუნდს სწორად შეაფასოს ბრენდისა და პროდუქტების განვითარებისა და გაუმჯობესების პერსპექტივები, რაც თავის მხრივ მნიშვნელოვანია სწორი ინვესტირებისა და სწრაფი განვითარებისთვის. 
+                </p>
+              <!-- <button class="service_more">ვრცლად</button> -->
+        
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">რაოდენობრივი კვლევები</a></h4>
-              <p>პირისპირ ინტერვიუები (CAPI/PAPI)
-სატელეფონო ინტერვიუები(CATI)ონლაინ / ვებინტერვიუები CLT / ინჰოლ ტესტი სენსუსი / რითეილი</p>
-            </div>
-          </div>
-
-         </div> -->
-
-
          
 
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box2" id="box2" data-aos="fade-up" data-aos-delay="450">
+            
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>კმაყოფილებისა და ლოიალობის კვლევები
+              </h4>
+              <p>კმაყოფილი და ლოიალური მომხმარებელი ბიზნესის ზრდისა და განვითარების ერთ-ერთი მთავარი განმაპირობებელი ძალაა. მაღალი კონკურენციის პირობებში მომხმარებლის კმაყოფილების მაღალი მაჩვენებლის შენარჩუნება ნიშნავს მეტ კეთილგანწყობილ და ერთგულ მომხმარებელს, რომლებიც ხშირად მოიხმარენ თქვენს ბრენდს და უწევენ მას რეკომენდაციას სხვებთან. 
+              </p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box2Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close2">X</button>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>კმაყოფილებისა და ლოიალობის კვლევები
+              </h4>
+              <p>
+                კმაყოფილი და ლოიალური მომხმარებელი ბიზნესის ზრდისა და განვითარების ერთ-ერთი მთავარი განმაპირობებელი ძალაა. მაღალი კონკურენციის პირობებში მომხმარებლის კმაყოფილების მაღალი მაჩვენებლის შენარჩუნება ნიშნავს მეტ კეთილგანწყობილ და ერთგულ მომხმარებელს, რომლებიც ხშირად მოიხმარენ თქვენს ბრენდს და უწევენ მას რეკომენდაციას სხვებთან. 
+                </p>
+              <p>მნიშვნელოვანია, რომ უწყვეტად აფასებდეთ მომხმარებლების მიერ თქვენს ბრენდთან ინტერაქციის დროს მიღებულ გამოცდილებას.
+                კმაყოფილებისა და ლოიალობის კვლევები გეხმარებათ:
+                 <br/> <br/>
+                 განსაზღვროთ ის ფაქტორები, რაც ახდენს გავლენას მომხმარებლების კმაყოფილებასა და ლოიალობაზე
+                 <br/> <br/>
+                 შეაფასოთ რამდენად პასუხობთ თქვენ და თქვენი კონკურენტი ბრენდები მომხმარებელთა საჭიროებებსა და სურვილებს
+                 <br/> <br/>
+                 გაანალიზოთ თქვენი ძლიერი და სუსტი მხარეები კონკურენტულ გარემოში
+                 <br/> <br/>
+                 უწყვეტად მიიღოთ ინფორმაცია ხარვეზების შესახებ, რომლებიც სწრაფ რეაგირებას საჭიროებს
+                 <br/> <br/>
+                
+                 მიღებული ინფორმაცია დაგეხმარებათ, რომ სწორად დასახოთ პრიორიტეტები და გაუმჯობესების მიმართულებები ორგანიზაციის შიგნით, ასევე სტრატეგიული კომუნიკაციის დაგეგმვისას გაითვალისწინოთ „მომხმარებელთა ხმა“ და ესაუბროთ მათივე სურვილებისა და საჭიროებების შესახებ. 
+
+                </p>
+              <!-- <button class="service_more">ვრცლად</button> -->
         
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box" id="box3" data-aos="fade-up" data-aos-delay="450">
+            
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>საკომუნიკაციო მასალებისა და პროდუქტის ტესტირებები
+
+              </h4>
+              <p>სხვადასხვა ტიპის ტესტირებები მნიშვნელოვანი საშუალებაა თქვენი პროდუქტის თუ კომუნიკაციის წარმატების წინასწარ შეფასებისთვის. ტესტირებები საშუალებას გაძლევთ შეარჩიოთ შემუშავებულ ვერსიებს შორის საუკეთესო და პროდუქტისა თუ კომუნიკაციის ჩაშვებამდე გაითვალისწინოთ და აღმოფხვრათ პოტენციური ხარვეზები. ტესტირებების გავრცელებული მიმართულებებია:
+              </p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box3Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close3">X</button>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>საკომუნიკაციო მასალებისა და პროდუქტის ტესტირებები
+              </h4>
+              <p>
+                სხვადასხვა ტიპის ტესტირებები მნიშვნელოვანი საშუალებაა თქვენი პროდუქტის თუ კომუნიკაციის წარმატების წინასწარ შეფასებისთვის. ტესტირებები საშუალებას გაძლევთ შეარჩიოთ შემუშავებულ ვერსიებს შორის საუკეთესო და პროდუქტისა თუ კომუნიკაციის ჩაშვებამდე გაითვალისწინოთ და აღმოფხვრათ პოტენციური ხარვეზები. ტესტირებების გავრცელებული მიმართულებებია:
+                </p>
+              <p>ბრენდ ატრიბუტიკის (სახელი, ლოგო, ბრენდბუქი) ტესტირება
+
+                 <br/>
+                 <br/>
+                 საკომუნიკაციო მასალების (კონცეფცია, ქოფი, ვიდეო რგოლის ანიმაციური ვერსია, სარეკლამო რგოლი, ბროშურა და სხვ.) პრე-ტესტი
+
+                 <br/>
+                 <br/>
+                 პროდუქტის შეფუთვის დიზაინის ტესტირება
+
+                 <br/>
+                 <br/>
+                 პროდუქტის გემოს ტესტირება
+
+                 <br/>
+                 <br/>
+                 უწყვეტად მიიღოთ ინფორმაცია ხარვეზების შესახებ, რომლებიც სწრაფ რეაგირებას საჭიროებს
+                 <br/>
+                 <br/>
+                
+                 ტესტირების დაწყებამდე დამკვეთთან ერთად განისაზღვრება ის ცვლადები, რომლებიც გამოყენებული იქნება შეფასებისთვის, იქმნება სტანდარტები (action standards), რომელთა მიმართებაშიც განისაზღვრება სატესტირებელი პროდუქტის წარმატება. 
+                <br/>
+                <br/>
+                ტესტირებების ხშირად ხდება ისეთი სტანდარტული საზომების გამოყენება, როგორებიცაა:
+                  <br/>
+                  <br/>
+                  მომხმარებლის ზოგადი შეფასება (general likeness)
+                  <br/>
+                  <br/>
+                  სპონტანური ასოციაციები და გამოწვეული ემოციები
+                  <br/>
+                  <br/>
+                  იდეის უნიკალურობა და განსხვავებულობა
+                  <br/>
+                  <br/>
+                  პროდუქტის გემოვნური და სხვა პარამეტრების შეფასება
+                  <br/> <br/>რელევანტურობა მომხმარებლისთვის
+                     <br/> <br/>დასამახსოვრებლობა
+                     <br/> <br/>სამიზნე ჯგუფში თვითიდენტიფიკაციის გამოწვევის შესაძლებლობა
+                       <br/> <br/>რეკლამის მიერ, რეკლამირებული პროდუქტის მახასიათბლების გადმოცემის უნარი
+                       <br/> <br/>შეძენის სურვილის გენერირება
+                       <br/> <br/>გავლენა ბრენდის იმიჯზე
+                      
+
+                </p>
+                
+              <!-- <button class="service_more">ვრცლად</button> -->
+        
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box" id="box4" data-aos="fade-up" data-aos-delay="450">
+            
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>შიდაორგანიზაციული კვლევები
+
+
+              </h4>
+              <p>კომპანიის წარმატებისა და განვითარებისთვის მნიშვნელოვანია როგორც მომხმარებელთა, ასევე თანამშრომელთა კმაყოფილებისა და მოტივაციის შეფასება. კვლევის ეს მიმართულება ფოკუსირებულია ორგანიზაციის შიდა პროცესების გამართულობასა და თანამშრომელთა კმაყოფილებაზე. 
+
+              </p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box4Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close4">X</button>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>შიდაორგანიზაციული კვლევები
+
+              </h4>
+              <p>
+                კომპანიის წარმატებისა და განვითარებისთვის მნიშვნელოვანია როგორც მომხმარებელთა, ასევე თანამშრომელთა კმაყოფილებისა და მოტივაციის შეფასება. კვლევის ეს მიმართულება ფოკუსირებულია ორგანიზაციის შიდა პროცესების გამართულობასა და თანამშრომელთა კმაყოფილებაზე. 
+
+                </p>
+              <p>თანამშრომელთა კმაყოფილების კვლევა დაგეხმარებათ:
+
+
+
+                 <br/>
+                 <br/>
+                 განსაზღვროთ  რა ფაქტორები ახდენს გავლენას თანამშრომლების სამუშაო გარემოთი კმაყოფილებაზე
+
+
+                 <br/>
+                 <br/>
+                 შეაფასოთ რამდენად კმაყოფილი არიან თანამშრომლები თავიანთი სამუშო გარემოთი და პირობებით, კონკრეტულად სამუშაო გარემოს რა ასპექტები იწვევს მეტ ან ნაკლებ კმაყოფილებას
+
+
+                 <br/>
+                 <br/>
+                 შეაფასოთ თანამშრომელთა ჩართულობა, ქომითმენთი, მოტივიაცია, მათ მიერ ორგანიზაციის მიზნებისა და მისწრაფების აღქმა 
+
+
+                 <br/>
+                 <br/>
+                 შეაფასოთ ზოგადი შიდაორგანიზაციული კულტურა და კლიმატი
+
+                 <br/>
+                 <br/>
+                
+                 თანამშრომელთა კმაყოფილების კვლევა საშუალებას გაძლევთ დროულად დააიდენტიფიციროთ და აღმოფხვრათ ის პრობლემები, რამაც შესაძლოა იმოქმედოს თანამშრომლების შრომის ნაყოფიერებასა და ორგანიზაციიდან თანამშრომელთა გადინებაზე. ასევე, კვლევის საფუძველზე შეძლებთ, შეიმუშავოთ ადამიანური რესურსების მართვის იმგვარი სტრატეგია, რაც უზრუნველყოფს თქვენი გუნდის მოტივაციის ამაღლებას, პოზიტიური სამუშაო კულტურის შენარჩუნებას. 
+              
+                      
+
+                </p>
+                
+              <!-- <button class="service_more">ვრცლად</button> -->
+        
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box" id="box5" data-aos="fade-up" data-aos-delay="450">
+            
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>UX კვლევები
+
+
+
+              </h4>
+              <p>კომპანიის ციფრულ არხებთან ურთიერთობისას მიღებული სამომხმარებლო გამოცდილება (UX) შესაძლოა თქვენი პროდუქტის მოხმარების მნიშვნელოვანი ტრიგერი ან პირიქით, ბარიერი აღმოჩნდეს. სწორედ ამიტომ, მნიშვნელოვანია ეს ინტერაქცია მომხმარებლისთვის მაქსიმალურად კომფორტული და ადვილი იყოს. UX კვლევები დაგეხმარებათ უზრუნველყოთ მაქსიმალურად გამართული ციფრული ინტერაქცია თქვენს მომხმარებელთან. 
+
+
+              </p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box5Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close5">X</button>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>UX კვლევები
+
+
+              </h4>
+              <p>
+                კომპანიის ციფრულ არხებთან ურთიერთობისას მიღებული სამომხმარებლო გამოცდილება (UX) შესაძლოა თქვენი პროდუქტის მოხმარების მნიშვნელოვანი ტრიგერი ან პირიქით, ბარიერი აღმოჩნდეს. სწორედ ამიტომ, მნიშვნელოვანია ეს ინტერაქცია მომხმარებლისთვის მაქსიმალურად კომფორტული და ადვილი იყოს. UX კვლევები დაგეხმარებათ უზრუნველყოთ მაქსიმალურად გამართული ციფრული ინტერაქცია თქვენს მომხმარებელთან. 
+
+
+                </p>
+              <p>UX-ის გასაზომად ვიყენებთ ისეთ საზომებს, როგორიცაა მაგალითად: კონკრეტული დავალების შესასრულებლად საჭირო დრო და კლიკების რაოდენობა; დავალების წარმატებით შესრულების სიხშირე და სხვ. 
+
+
+
+
+                 
+                      
+
+                </p>
+                
+              <!-- <button class="service_more">ვრცლად</button> -->
+        
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box" id="box6" data-aos="fade-up" data-aos-delay="450">
+            
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>მყიდველის ქცევის ანალიზი
+
+
+
+
+              </h4>
+              <p>პროდუქტისა თუ მომსახურების შეძენამდე მყიდველი ყოველთვის გადის გარკვეულ გზას. მომხმარებლის სხვადასხვა კატეგორიისთვის ეს გზა შეიძლება ძალიან მოკლე ან ძალიან გრძელი იყოს. პროდუქტისა და მომსახურების მიმწოდებლისთვის კი მნიშვნელოვანია კარგად იცნობდეს თუ რა გზას გადის მყიდველი საბოლოო გადაწყვეტილების მიღებამდე: რა საინფორმაციო არხებს იყენებს? რა ტიპის ინფორმაციას ეცნობა? ვინ შეიძლება იმოქმედოს მის გადაწყვეტილებაზე? როგორია ე.წ. გადაწყვეტლების მიღების ხე (Decision making tree)? 
+
+
+
+              </p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box6Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close6">X</button>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>მყიდველის ქცევის ანალიზი
+
+
+
+              </h4>
+              <p>
+                პროდუქტისა თუ მომსახურების შეძენამდე მყიდველი ყოველთვის გადის გარკვეულ გზას. მომხმარებლის სხვადასხვა კატეგორიისთვის ეს გზა შეიძლება ძალიან მოკლე ან ძალიან გრძელი იყოს. პროდუქტისა და მომსახურების მიმწოდებლისთვის კი მნიშვნელოვანია კარგად იცნობდეს თუ რა გზას გადის მყიდველი საბოლოო გადაწყვეტილების მიღებამდე: რა საინფორმაციო არხებს იყენებს? რა ტიპის ინფორმაციას ეცნობა? ვინ შეიძლება იმოქმედოს მის გადაწყვეტილებაზე? როგორია ე.წ. გადაწყვეტლების მიღების ხე (Decision make tree)
+
+
+
+                </p>
+                <br/>
+                <br/>
+              <p>სწორედ ამ შეკითხვებზე პასუხების მიღებასა და ანალიზში დაგეხმარებათ ჩვენი სპეციალიზებული კვლევითი მიდგომები, რომელიც სრულფასოვნად შეისწავლის მყიდველის ქცევის მოდელებს და გთავაზობთ კონკრეტულ რეკომენდაციებს თუ როგორ გააუმჯობესოთ თქვენს პროდუქტსა თუ მომსახურებამდე მისასვლელი გზა. 
+
+
+                  <br/><br/>
+                  მყიდველის ქცევის ანალიზი შესაძლოა განხორციელდეს კონკრეტულად სავაჭრო ობიექტშიც. მყიდველის მიერ სავაჭრო ობიექტში კონკრეტული პროდუქტის შერჩევის ქცევაზე დაკვირვება და მისი მოტივაციების შესწავლა, საშუალებას გვაძლევს დაგანახოთ თქვენი გაყიდვების ზრდის პერსპექტივები. 
+
+
+                 
+                      
+
+                </p>
+                
+              <!-- <button class="service_more">ვრცლად</button> -->
+        
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box" id="box7" data-aos="fade-up" data-aos-delay="450">
+            
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>სოციალური და პოლიტიკური, საზოგადოებრივი აზრის გამოკითხვები (Public opinion poll)
+
+
+
+
+
+              </h4>
+              <p>საზოგადოებრივი გამოკითხვებისთვის დამახასიათებელია განსხვავებული სპეციფიკა, როგორც შერჩევის, ასევე კვლევის ინსტრუმენტის შემუშავების თვალსაზრისით. 
+
+
+
+
+              </p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box7Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close7">X</button>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>სოციალური და პოლიტიკური, საზოგადოებრივი აზრის გამოკითხვები (Public opinion poll)
+
+
+
+
+              </h4>
+              <p>
+                საზოგადოებრივი გამოკითხვებისთვის დამახასიათებელია განსხვავებული სპეციფიკა, როგორც შერჩევის, ასევე კვლევის ინსტრუმენტის შემუშავების თვალსაზრისით. 
+
+
+
+
+                </p>
+                <br/>
+                <br/>
+              <p>ჩვენი ამოცანაა შევქმნათ კვლევის ისეთი დიზაინი, რომელიც დამკვეთის ფინანსური და დროითი რესურსების გათვალისწინებით, უზრუნველყოფს საზოგადოების დამოკიდებულებების მაქსიმალური სიზუსტით ასახვას და სწორ ანალიზს, რაც თავის მხრივ დამკვეთს აძლევს საშუალებას შეიმუშავოს კვლევაზე დაფუძნებული სტრატეგია და პოლიტიკები. 
+
+
+
+                 
+
+
+                 
+                      
+
+                </p>
+                
+              <!-- <button class="service_more">ვრცლად</button> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 service_box box" id="box8" data-aos="fade-up" data-aos-delay="450">
+            
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>ანალიტიკური მეთოდოლოგია
+
+
+
+
+
+
+              </h4>
+              <p>Conjoint Analysis -  ერთობლივი ანალიზი (საქონლის მიმართ სამომხმარებლო დამოკიდებულების სტატისტიკური კვლევა, რომელიც ადგენს საქონლის თვისებების ერთი კომბინაციის შედარებით ზემოქმედებას ყიდვის შესახებ გადაწყვეტილებაზე სხვა კომბინაციასთან შედარებით)
+
+
+
+
+
+              </p>
+             
+              <!-- <button class="service_more">ვრცლად</button> -->
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 service_box" id="box8Hidden" data-aos="fade-up" data-aos-delay="450">
+            <button id="close8">X</button>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4>ანალიტიკური მეთოდოლოგია
+
+
+
+
+
+              </h4>
+              <p>
+                Conjoint Analysis -  ერთობლივი ანალიზი (საქონლის მიმართ სამომხმარებლო დამოკიდებულების სტატისტიკური კვლევა, რომელიც ადგენს საქონლის თვისებების ერთი კომბინაციის შედარებით ზემოქმედებას ყიდვის შესახებ გადაწყვეტილებაზე სხვა კომბინაციასთან შედარებით)
+                <br/>
+                <br/>Price Elasticity Analysis - ფასის ელასტიურობა (საქონელზე მოთხოვნის პროცენტული ცვლილების თანაფარდობა მისი ფასის პროცენტულ ცვლილებასთან)
+                <br/>
+                <br/> brand power Analysis - ბრენდის ძალა (მოცემულ სასაქონლო კატეგორიაში ბრენდის მხრიდან დომინირების შესაძლებლობა მის შესახებ მომხმარებელთა ინფორმირებულობის საშუალებით)
+                <br/>
+                <br/> Brand Health Analysis - ეს არის მარკეტინგული კვლევა, რომელიც საშუალებას გაძლევთ მიიღოთ დინამიური ინფორმაცია ბრენდის ცნობადობის, მისი პოზიციის ბაზარზე, კონკურენტუნარიანობის, იმიჯის, რეპუტაციის, მომხმარებელთა ლოიალობის შესახებ და მრავალი სხვა.
+                <br/>
+                <br/>C-Sat მომხმარებელთა კმაყოფილების გაზომავა
+                <br/>
+                <br/> Net promoter score NPS - რეკომენდაციის გაზომვა
+                <br/>
+                <br/> Brand Love Index and Customer Segmentation- მომხმარებლის ლოიალობის და კმაყოფილების ინდექსი და ამ პარამეტრების მიხედვით მომხმარებლის სეგმენტაცია
+                <br/>
+                <br/>Cluster analysis – ბაზრის სეგმენტაცია სხვადასხვა პარამეტრის მიხედვით
+                <br/>
+                <br/>Hypothesis testing -  ჰიპოთეზის ტესტირება
+                <br/>
+                <br/>  Predictive modeling – BIG DATA - დიდ მონაცემთა დამუშავების ტექნოლოგიები. პროგნოზირებადი მოდელირება, სიღრმისეული სტატისტიკა
+                
+
+
+
+                 
+
+
+                 
+                      
+
+                </p>
+                
+              <!-- <button class="service_more">ვრცლად</button> -->
+            </div>
+          </div>
+
 
       </div>
     </section><!-- End Services Section -->
@@ -706,6 +1057,8 @@
     </div>
   </footer><!-- End Footer -->
 
+
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
@@ -718,7 +1071,133 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script>
+
+document.getElementById("box1").addEventListener("click", () => {
+     
+     document.getElementById("box1Hidden").style.display="flex";
+     
+
+     }
+   )
+
+
+   document.getElementById("close1").addEventListener("click", () => {
+     
+     document.getElementById("box1Hidden").style.display="none";
+
+     }
+   )
+
+   document.getElementById("box2").addEventListener("click", () => {
+     
+     document.getElementById("box2Hidden").style.display="flex";
+
+     }
+   )
+
+
+   document.getElementById("close2").addEventListener("click", () => {
+     
+     document.getElementById("box2Hidden").style.display="none";
+
+     }
+   )
+
+
+   document.getElementById("box3").addEventListener("click", () => {
+     
+     document.getElementById("box3Hidden").style.display="flex";
+
+     }
+   )
+
+
+   document.getElementById("close3").addEventListener("click", () => {
+     
+     document.getElementById("box3Hidden").style.display="none";
+
+     }
+   )
+
+    
+   document.getElementById("box4").addEventListener("click", () => {
+     
+     document.getElementById("box4Hidden").style.display="flex";
+
+     }
+   )
+
+
+   document.getElementById("close4").addEventListener("click", () => {
+     
+     document.getElementById("box4Hidden").style.display="none";
+
+     }
+   )
+
+   document.getElementById("box5").addEventListener("click", () => {
+     
+     document.getElementById("box5Hidden").style.display="flex";
+
+     }
+   )
+
+
+   document.getElementById("close5").addEventListener("click", () => {
+     
+     document.getElementById("box5Hidden").style.display="none";
+
+     }
+   )
+
+   document.getElementById("box6").addEventListener("click", () => {
+     
+     document.getElementById("box6Hidden").style.display="flex";
+
+     }
+   )
+
+
+   document.getElementById("close6").addEventListener("click", () => {
+     
+     document.getElementById("box6Hidden").style.display="none";
+
+     }
+   )
+
+
+   document.getElementById("box7").addEventListener("click", () => {
+     
+     document.getElementById("box7Hidden").style.display="flex";
+
+     }
+   )
+
+
+   document.getElementById("close7").addEventListener("click", () => {
+     
+     document.getElementById("box7Hidden").style.display="none";
+
+     }
+   )
+   
+   document.getElementById("box8").addEventListener("click", () => {
+     
+     document.getElementById("box8Hidden").style.display="flex";
+
+     }
+   )
+
+
+   document.getElementById("close8").addEventListener("click", () => {
+     
+     document.getElementById("box8Hidden").style.display="none";
+
+     }
+   )
   
+  </script>
   <script src="assets/js/main.js"></script>
 
 </body>

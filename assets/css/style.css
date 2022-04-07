@@ -672,6 +672,10 @@ section {
   color: #fff;
 }
 
+.services {
+  position: relative;
+}
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1317,32 +1321,64 @@ section {
   overflow-y: auto;
 }
 
-.first_sentence {
-  opacity: 0;
-  transition: 1s all ease;
-}
 .service_box {
-  height: 420px;
+  height: 500px;
+  cursor: pointer;
 }
-
-.service_box:hover .first_sentence {
-  opacity: 1 !important;
-  transition: 1s all ease;
+@media (max-width: 1405px) {
+  .service_box {
+    width: 100%;
+  }
 }
-
-.service_more {
-  padding: 5px 10px;
-  /* border-radius: 10px; */
-  border: 1px solid white;
-  background-color: transparent;
+#box1Hidden,
+#box2Hidden,
+#box3Hidden,
+#box4Hidden,
+#box5Hidden,
+#box6Hidden,
+#box7Hidden,
+#box8Hidden {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  margin: auto;
+  height: auto !important;
+  background: rgba(0, 171, 190, 0.95);
   color: white;
-  margin-top: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  opacity: 0 !important;
 }
 
-.service_more:hover {
-  color: white;
+#box4Hidden,
+#box5Hidden,
+#box6Hidden {
+  top: 600px;
+}
+
+#box7Hidden,
+#box8Hidden {
+  top: 1200px;
+}
+
+/* .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover{
+  position: absolute;
+  width: 70vw !important;;
+  margin: auto;
+  z-index: 3;
+} */
+
+#close1,
+#close2,
+#close3,
+#close4,
+#close5,
+#close6,
+#close7,
+#close8 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
   border: none;
   background-color: rgba(51, 79, 114, 0.95);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -1378,4 +1414,17 @@ section {
   to {
     left: -1000px;
   }
+}
+
+#close1,
+#close2,
+#close3,
+#close4,
+#close5,
+#close6,
+#close7,
+#close8 {
+  background: transparent;
+  color: white;
+  font-size: 24px;
 }
